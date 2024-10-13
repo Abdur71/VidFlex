@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js CDN -->
+</head>
+<body class="dark-mode">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button id="theme-toggle" class="login-button">Theme Change</button>
+
+        <button id="theme-toggle" class="theme-toggle" onclick="logout()">Log Out</button>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard">
+        <div class="sidebar">
+            <ul>
+                <a href="#" class="logo"><img src="image/Logo (1).png" alt="VidFlex Logo"></a>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Manage Users</a></li>
+                <li><a href="#"><i class="fas fa-film"></i> Manage Content</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> Analytics</a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1>Admin Dashboard</h1>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Users</h3>
+                    <p>12,340</p>
+                </div>
+                <div class="stat-card">
+                    <h3>New Subscriptions</h3>
+                    <p>340</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Revenue</h3>
+                    <p>$56,780</p>
+                </div>
+            </div>
+
+
+            <div class="content-management">
+                <h2>Recent Uploads</h2>
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Date Uploaded</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Movie Title 1</td>
+                            <td>Movies</td>
+                            <td>Published</td>
+                            <td>2024-10-12</td>
+                        </tr>
+                        <tr>
+                            <td>Series Title 1</td>
+                            <td>Series</td>
+                            <td>Published</td>
+                            <td>2024-10-10</td>
+                        </tr>
+                        <tr>
+                            <td>Documentary 1</td>
+                            <td>Documentaries</td>
+                            <td>Draft</td>
+                            <td>2024-10-08</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

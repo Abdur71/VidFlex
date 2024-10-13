@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo-img" src="image/Logo (1).png" alt="VidFlex Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Movie.html">Movies</a></li>
+            <li><a href="LiveTv.html">Live TV</a></li>
+            <li><a href="Login.html">Login/Sign up</a></li>
+        </ul>
+        <div class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Help Center Section -->
+    <section class="help-center">
+        <div class="help-header">
+            <h2>FAQs</h2>
+            <p>Find answers to common questions and issues below.</p>
+        </div>
+        
+        <div class="faq-section">
+            <div class="faq">
+                <h3>How can I reset my password?</h3>
+                <p>Click on the 'Forgot Password' link on the login page, and follow the instructions sent to your email.</p>
+            </div>
+            <div class="faq">
+                <h3>How can I contact customer support?</h3>
+                <p>You can reach us via our <a href="contact.html">Contact Us</a> page or email us at support@vidflex.com.</p>
+            </div>
+            <div class="faq">
+                <h3>How do I update my payment details?</h3>
+                <p>Go to 'My Account' and click on 'Payment Details' to update your billing information.</p>
+            </div>
+            <div class="faq">
+                <h3>Why can't I watch certain content?</h3>
+                <p>Some content may not be available in your region due to licensing restrictions.</p>
+            </div>
+            <div class="faq">
+                <h3>How do I cancel my subscription?</h3>
+                <p>To cancel your subscription, go to 'Account Settings' and click on 'Cancel Subscription'.</p>
+            </div>
+            <div class="faq">
+                <h3>Can I watch VidFlex on multiple devices?</h3>
+                <p>Yes, VidFlex supports multiple device logins with a premium account.</p>
+            </div>
+            <div class="faq">
+                <h3>Is there a mobile app for VidFlex?</h3>
+                <p>Yes, VidFlex has apps available for both iOS and Android platforms.</p>
+            </div>
+            <div class="faq">
+                <h3>Why is my video buffering?</h3>
+                <p>Buffering can occur due to slow internet connections. Please check your network and refresh the page.</p>
+            </div>
+            <div class="faq">
+                <h3>How do I redeem a gift code?</h3>
+                <p>Go to 'My Account', click on 'Redeem Code', and enter your gift code to claim it.</p>
+            </div>
+            <div class="faq">
+                <h3>How do I report a problem with a video?</h3>
+                <p>Click on the 'Report' button under the video player, or email support with the details.</p>
+            </div>
+        </div>
+
+        <!-- Contact Support -->
+        <div class="contact-support">
+            <h3>Still need help?</h3>
+            <p>If you couldn't find the answer to your question, please send us an email below.</p>
+            <form action="submit-faq.html" method="POST">
+                <div class="input-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Your Question</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Describe your issue" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Top: Links -->
+            <div class="footer-links">
+                <div class="footer-image">
+                   <a href="index.html">
+                    <img src="image/Logo (1).png" alt="">
+                   </a>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Live TV</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Shows</a></li>
+                        <li><a href="#">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="Help.html">FAQs</a></li>
+                        <li><a href="Help.html">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom: Social Media & Copyright -->
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>&copy; 2024 VidFlex. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
